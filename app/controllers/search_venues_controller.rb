@@ -6,8 +6,13 @@ class SearchVenuesController < ApplicationController
       fail ArgumentError, 'Missing disability_type AND location'
     end
     disability_condition = disability_search(params['disability_type'])
-    render json: Venue.where(disability_condition).where('location LIKE :location OR state LIKE :location', location: "%#{params['location']}%")
+    search_results = Venue.where(disability_condition).where('location LIKE :location OR state LIKE :location', location: "%#{params['location']}%")
+    if params['price']
+      search_results = search_results.where(price: params['price'])
+    end
+    render json: search_results
   end
+
 
   def disability_search(disability_type)
     disability_types = ['m1', 'm2', 'hs', 'h1', 'v1']
