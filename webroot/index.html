@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+<body ng-app="access-aust">
+  <div class="nav">
+
+  </div>
+  <div class="search">
+      <input type="text"><button>Search</button>
+  </div>
+  <div class="herobar">
+
+  </div>
+  <div class="main">
+      <div class="title">
+          <h1>title goes here</h1>
+      </div>
+      <div ng-repeat="card in cards">
+        <div class="venue">
+            <img src="{{venue.image_url}}" alt="{{venue.alt}}">
+            <div>
+               <p>{{venue.name}}</p>
+               <p>{{venue.location}}</p>
+            </div>
+            <div ng-repeat="icon in icons" class="access-icons">
+              <img src="{{icon.img}}" alt="{{icon.alt}}">
+            </div>
+        </div>
+      </div>
+  </div>
+  <div class="footer">
+
+  </div>
+</body>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/angular.min.js"></script>
+</html>
