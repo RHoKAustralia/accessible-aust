@@ -2,18 +2,18 @@
 rhok project
 
 ## Setup instructions
-Clone the repo and run ```rake db:setup``` to create the database and load the data from Data.csv into the database
+Clone the repo and run ```rake db:setup``` to create the database and load the data from Data.csv into the database.
 
 ## Executing the application:
-Run ```rails server``` to start the server
+Run ```rails server``` to start the server.
 
 ## Endpoints:
 
 ### GET /venues
-```GET /venues``` to see all venues in JSON format
+```GET /venues``` to see all venues in JSON format.
 
 ### POST /search_venues
-```POST /search_venues``` with required parameters ```disability_type``` AND ```location```
+```POST /search_venues``` with required parameters ```disability_type``` AND ```location```.
 
 | Disability types |
 | ---------------- |
@@ -23,7 +23,7 @@ Run ```rails server``` to start the server
 | h1               |
 | v1               |
 
-```price``` is sent as a string such as ```"80"``` and it's an optional parameter
+```min_price``` and ```max_price``` are optionals and sent as a string such as ```"80"```.
 
 ## Devs
 
