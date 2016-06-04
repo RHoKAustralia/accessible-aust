@@ -10,9 +10,11 @@ Executing the application:
 Run ```rails server``` to start the server
 
 Endpoints:
-```/venues``` to see all venues in JSON format
+```GET /venues``` to see all venues in JSON format
+```POST /search_venues``` with parameters ```disability_type``` and ```location```
+
 
 Devs:
-Joao <br>
+Joao Medrado<br>
 Benjamin Sweetnam <br>
 Alvin Tolentino
