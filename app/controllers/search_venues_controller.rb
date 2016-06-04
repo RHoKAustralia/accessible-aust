@@ -7,8 +7,11 @@ class SearchVenuesController < ApplicationController
     end
     disability_condition = disability_search(params['disability_type'])
     search_results = Venue.where(disability_condition).where('location LIKE :location OR state LIKE :location', location: "%#{params['location']}%")
-    if params['price']
-      search_results = search_results.where(price: params['price'])
+    if params['min_price']
+      search_results = search_results.where('price <= ?', params['min_price'])
+    end
+    if params['max_price']
+      search_results = search_results.where('price >= ?', params['max_price'])
     end
     render json: search_results
   end
