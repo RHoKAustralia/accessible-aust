@@ -2,6 +2,6 @@
 rhok project
 
 Devs:
-Joao
-Benjamin Sweetnam
+Joao <br>
+Benjamin Sweetnam <br>
 Alvin Tolentino
