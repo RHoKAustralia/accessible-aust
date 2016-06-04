@@ -12,7 +12,7 @@ venues_csv = CSV.open('Data.csv', headers: true, encoding:'iso-8859-1:utf-8')
 
 # venues_csv.rewind;
 venues_csv.each do |d| 
-  puts(Venue.new({
+  Venue.new({
     url: d['URL'],
     state: d['STATE'],
     category: d['CATEGORY'],
@@ -26,7 +26,9 @@ venues_csv.each do |d|
     hs: d['HS'],
     h1: d['H1'],
     v1: d['V1'],
+    price: ['70', '80', '90', '75', '85', '95'].sample,
     other_info: d['OTHERINO'],
-    img_url: d['IMG_URL'] }).save )
+    img_url: d['IMG_URL'] 
+  }).save
 end
 
