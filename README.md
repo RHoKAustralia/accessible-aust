@@ -13,7 +13,8 @@ Run ```rails server``` to start the server.
 ```GET /venues``` to see all venues in JSON format.
 
 ### POST /search_venues
-```POST /search_venues``` with required parameters ```disability_type``` AND ```location```.
+```POST /search_venues``` with required parameters ```disability_type``` AND ```location```. Optional parameters are```min_price``` and/or ```max_price``` and sent as a string such as ```"80"```.
+
 
 | Disability types |
 | ---------------- |
@@ -23,7 +24,6 @@ Run ```rails server``` to start the server.
 | h1               |
 | v1               |
 
-```min_price``` and ```max_price``` are optionals and sent as a string such as ```"80"```.
 
 ## Devs
 
