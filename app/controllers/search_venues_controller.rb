@@ -3,7 +3,7 @@ class SearchVenuesController < ApplicationController
 
   def create
     disability_condition = disability_search(params['disability_type'])
-    render json: Venue.where(disability_condition).where('location LIKE :location', location: "%#{params['location']}%")
+    render json: Venue.where(disability_condition).where('location LIKE :location OR state LIKE :location', location: "%#{params['location']}%")
   end
 
   def disability_search(disability_type)
