@@ -2,6 +2,9 @@ class SearchVenuesController < ApplicationController
   skip_before_filter :verify_authenticity_token, only: [:create]
 
   def create
+    unless params['disability_type'] && params['location']
+      fail ArgumentError, 'Missing disability_type AND location'
+    end
     disability_condition = disability_search(params['disability_type'])
     render json: Venue.where(disability_condition).where('location LIKE :location OR state LIKE :location', location: "%#{params['location']}%")
   end
