@@ -4,24 +4,47 @@
   <meta charset="UTF-8">
   <title></title>
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,500,700,800' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="assets/css/front-page.css">
 </head>
 <body ng-app="access-aust">
-  <div class="nav">
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Trip Clusive</a>
+    </div>
 
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 search">
+      <form action="" class="search-form form-inline">
+            <input type="text" class="form-control search-input" placeholder="Where Do You Want To Go?">
+        <button type="submit" class="btn btn-md btn-default search-button">Search</button>
+      </form>
+    </div>
   </div>
-  <div class="search">
-      <input type="text"><button>Search</button>
   </div>
-  <div class="herobar">
 
+  <div class="herobar col-sm-12">
+      <p>somethings</p>
   </div>
-  <div class="main">
-      <div class="title">
-          <h1>title goes here</h1>
+  <div class="main col-sm-12">
+      <div class="sponsor-title">
+          <h1>Suggested Location</h1>
       </div>
       <div ng-repeat="card in cards">
-        <div class="venue">
-            <img src="{{venue.image_url}}" alt="{{venue.alt}}">
+        <div class="venue panel panel-default col-sm-3">
+            <img class="venue-image" src="{{venue.image_url}}" alt="{{venue.alt}}">
             <div>
                <p>{{venue.name}}</p>
                <p>{{venue.location}}</p>
