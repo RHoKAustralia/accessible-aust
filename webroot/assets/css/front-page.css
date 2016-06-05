@@ -2,6 +2,7 @@
 * {
   font-family: 'Lato', sans-serif;
 }
+
 .container-fluid > .navbar-collapse,
 .container-fluid > .navbar-header,
 .container > .navbar-collapse,
@@ -21,9 +22,14 @@
   background-color: #4AD9D9;
 }
 .navbar-logo{
-  width: 150px;
+  width: 100px;
   height: 30px;
   display: inline-block;
+}
+
+.jumbotron {
+  padding: 0;
+  margin: 0;
 }
 .form-inline .form-control {
   width: 80%;
