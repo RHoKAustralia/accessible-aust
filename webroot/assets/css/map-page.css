@@ -29,4 +29,16 @@
 .search-bar {
   background-color: #4AD9D9;
 }
+.search-form {
+  margin-top: 10px;
+}
+.map-box {
+  padding-left: 0;
+  margin-left: -15px;
+}
 
+.form-control.search-input {
+  width: 195px !important;
+  padding-left: 5px !important;
+  margin-left: -15px !important;
+}
