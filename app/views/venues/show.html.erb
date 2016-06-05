@@ -1,0 +1,14 @@
+<% @venues.each do |venue| %>
+<div>
+	<div class="venue panel panel-default col-sm-3">
+		<img class="venue-image" src="<%= venue.img_url%>" alt="{{venue.alt}}">
+		<div>
+			<p><%= venue.name %></p>
+			<p><%= venue.location %></p>
+		</div>
+		<%# <div ng-repeat="icon in icons" class="access-icons"> %>
+		<%# 	<img src="{{icon.img}}" alt="{{icon.alt}}"> %>
+		<%# </div> %>
+	</div>
+</div>
+<% end %>

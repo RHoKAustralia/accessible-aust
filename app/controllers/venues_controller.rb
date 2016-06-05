@@ -4,6 +4,11 @@ class VenuesController < ApplicationController
   end
 
   def show
-    render json: Venue.find(params[:id])
+    @venues = []
+    ['1', '2', '3', '4'].each do |id|
+    @venues.push Venue.find(id)
+    end
+
+    # render json: Venue.find(params[:id])
   end
 end

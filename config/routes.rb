@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'root#index'
   resources :venues, only: [:index, :show]
   resources :search_venues, only: [:create]
   # The priority is based upon order of creation: first created -> highest priority.
