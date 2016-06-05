@@ -1,0 +1,29 @@
+/* blue: #4AD9D9 grey: #262626*/
+.info {
+  font-size: 2.2rem;
+}
+.description {
+  font-size: 1.4rem;
+}
+
+.preview>img{
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  display: inline;
+}
+
+.access-icons{
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+.access-icons>{
+
+}
+
+.search-bar {
+  background-color: #4AD9D9;
+}
+
