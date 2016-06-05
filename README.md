@@ -12,6 +12,9 @@ Run ```rails server``` to start the server.
 ### GET /venues
 ```GET /venues``` to see all venues in JSON format.
 
+### GET /venues/{id}
+```GET /venues/{id}``` to see a specific venue with the ```id``` being an integer
+
 ### POST /search_venues
 ```POST /search_venues``` with required parameters ```disability_type``` AND ```location```. Optional parameters are```min_price``` and/or ```max_price``` and sent as a string such as ```"80"```.
 

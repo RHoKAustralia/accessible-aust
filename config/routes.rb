@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :venues, only: [:index]
+  resources :venues, only: [:index, :show]
   resources :search_venues, only: [:create]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
