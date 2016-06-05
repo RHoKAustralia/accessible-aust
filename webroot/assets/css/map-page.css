@@ -12,15 +12,18 @@
   height: 100%;
   width: 100%;
   display: inline;
+  position: relative;
+  z-index: 1;
 }
 
 .access-icons{
-  float: left;
   padding: 0;
   margin: 0;
+  position: fixed;
+  z-index: 10;
 }
-.access-icons>{
-
+.access-icons>img{
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .search-bar {
